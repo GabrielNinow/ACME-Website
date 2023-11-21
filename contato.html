@@ -1,69 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME</title>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>ACME - Contatos</title>
-    
-        <!-- CSS only -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    
-        <link rel="stylesheet" href="css/style.css">
-    </head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/newStyle.css">
 
+</head>
 
 <body>
-    <div id="top-menu">
-        <div class="logo">
-            <img src="images/acme-corp.png" alt="ACME">
-        </div>
-        <div class="menu">
-            <span><a href="index.html">Inicial</a></span>
-            <span><a href="quem-somos.html">Quem somos</a></span>
-            <span><a href="produtos.html">Produtos</a></span>
-            <span><a href="contato.html">Contato</a></span>
+    <div class="container">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="newIndex.html"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <img src="images/acme-logo.png" alt="">
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="index.html" class="nav-link" aria-current="page">Inicio</a></li>
+                <li class="nav-item"><a href="produtos.html" class="nav-link">Produtos</a></li>
+                <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="contato.html" class="nav-link active">Contato</a></li>
+            </ul>
+        </header>
+
+        <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+            <div class="row align-items-center g-lg-5 py-5">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Contato
+                    </h1>
+                    <p class="col-lg-10 fs-4">Tem um elogio a fazer, ou reclamação? não entendeu como usar direito o
+                        produto? ligue ou mande um email para o SAC da ACME</p>
+                    <p class="col-lg-10 fs-4 font-weight-bold">
+                        (11) 98765-1234<br />
+                        acme@acme.co
+                    </p>
+                </div>
+                <div class="col-md-10 mx-auto col-lg-5">
+                    <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Endereço de email</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input id="phone-number" type="text" class="form-control" placeholder="(00) 00000-0000">
+                            <label for="phone-number">Número de telefone</label>
+                        </div>
+                        <!--   <div class="mb-5">
+                            <textarea id="floatingTextarea" class="form-control" placeholder="Mensagem">
+                        </div> -->
+                        <div class="checkbox mb-3">
+                            <label>
+                                <input type="checkbox" value="remember-me"> Atualizações no email
+                            </label>
+                        </div>
+                        <button class="w-100 btn btn-lg btn-primary" type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
-    <div id="content">
-        <h1>Contato</h1>
-        <p>Tem um elogio a fazer, ou reclamação? não entendeu como usar direito o produto? ligue para o SAC da ACME</p>
-        <span>+55 (11) 98765-1234</span>
-        <p>você também pode entrar em contanto pelo email</p>
-        <span>acme@acme.co</span>
-        <p>lá você pode exclarecer todas suas duvidas, e também fazer as suas reclamações</p>
 
-        <form>
-
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Nome</label>
-            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Denilson">
-          </div>
-
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Numero</label>
-            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="+55 (11) 98743-1234">
-          </div>
-
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-          </div>
-
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Mensagem</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            
-        </div>
-        <div class= "buttons">
-          <button type="reset">Limpar</button>
-          <button type="submit">enviar</button>
-        </form>
-</div>
-
+    <script>
+        document.getElementById('phone-number').addEventListener('blur', function (e) {
+            var x = e.target.value.replace(/\D/g, '').match(/(\d{2})(\d{5})(\d{4})/);
+            e.target.value = '(' + x[1] + ') ' + x[2] + '-' + x[3];
+        });
+    </script>
 </body>
 
 </html>
