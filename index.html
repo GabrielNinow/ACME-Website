@@ -1,48 +1,86 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>ACME</title>
-    
-        <!-- CSS only -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-            integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    
-        <link rel="stylesheet" href="css/style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
 
 <body>
-    <div id="top-menu">
-        <div class="logo">
-            <img src="images/acme-corp.png" alt="ACME">
-        </div>
-        <div class="menu" style="text-decoration:none">
-            <span><a href="index.html">Inicial</a></span>
-            <span><a href="quem-somos.html">Quem somos</a></span>
-            <span><a href="produtos.html">Produtos</a></span>
-            <span><a href="contato.html">Contato</a></span>
-            
-        </div>
-    </div>
-    <div id="content">
-        <h2>Seja bem vindo!</h2>
-        <p>
-            Bem vindo a página de nossa empresa! Você pode
-            conhecer <a href="quem-somos.html">nossa empresa</a>
-            ou <a href="produtos.html">nossos produtos</a>!
-            precisa entrar em contato com a gente? <a href="contato.html">entre aqui</a>
-        </p>
-        <p>no nosso site você pode encontrar todos nossos produtos, e as suas ultilidades, lembrando que somos lideres em vendas de produtos para caça de papaleguas!
-            porém temos produtos para sua residencia também!
-        </p>
-        <p>o que está esperando? compre logo nossos produtos!</p>
+    <div class="container">
+        <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+            <symbol id="linkedin" viewBox="0 0 24 24" width="24px" height="24px">
+                <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+            </symbol>
+            <symbol id="github" viewBox="0 0 24 24" width="24px" height="24px">
+                <path
+                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z" />
+            </symbol>
+        </svg>
+
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+            <a href="Index.html"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <img src="images/acme-logo.png" alt="">
+            </a>
+
+            <ul class="nav nav-pills">
+                <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Inicio</a></li>
+                <li class="nav-item"><a href="produtos.html" class="nav-link">Produtos</a></li>
+                <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="contato.html" class="nav-link">Contato</a></li>
+            </ul>
+        </header>
     </div>
 
-    <div class="footer">
-        <span>Desde 1923 a lider em vendas</span>
+    <div class="px-4 py-5 my-5 text-center">
+        <h1 class="display-5 fw-bold ">Seja bem vindo!</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">Bem vindo a página de nossa empresa! Você pode
+                conhecer <a href="quem-somos.html">nossa empresa</a>
+                ou <a href="produtos.html">nossos produtos</a>!
+                precisa entrar em contato com a gente? <a href="contato.html">Entre aqui</a>
+            </p>
+            <p class="lead mb-4">no nosso site você pode encontrar todos nossos produtos, e as suas ultilidades,
+                lembrando que somos
+                lideres
+                em vendas de produtos para caça de papaleguas!
+                porém temos produtos para sua residencia também!
+            </p>
+            <p class="lead mb-4">o que está esperando? compre logo nossos produtos!</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap" />
+                    </svg>
+                </a>
+                <span class="mb-3 mb-md-0">&copy; 2023 Acme, Inc</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-body-secondary" href="https://linkedin.com/in/gabriel-ninow"
+                        target="_blank"><svg class="bi" width="30" height="30">
+                            <use xlink:href="#linkedin" />
+                        </svg></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://github.com/GabrielNinow"
+                        target="_blank"><svg class="bi" width="30" height="30">
+                            <use xlink:href="#github" />
+                        </svg></a></li>
+            </ul>
+        </footer>
     </div>
 </body>
 
