@@ -16,33 +16,35 @@
 <body>
     <div class="container">
         <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-            <a href="newIndex.html"
+            <a href="Index.html"
                 class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
                 <img src="images/acme-logo.png" alt="">
             </a>
 
             <ul class="nav nav-pills">
-                <li class="nav-item"><a href="index.html" class="nav-link" aria-current="page">Inicio</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
                 <li class="nav-item"><a href="produtos.html" class="nav-link">Produtos</a></li>
                 <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
-                <li class="nav-item"><a href="contato.html" class="nav-link active">Contato</a></li>
+                <li class="nav-item"><a href="contato.html" class="nav-link active" aria-current="page">Contato</a></li>
             </ul>
         </header>
 
         <div class="container col-xl-10 col-xxl-8 px-4 py-5">
             <div class="row align-items-center g-lg-5 py-5">
                 <div class="col-lg-7 text-center text-lg-start">
-                    <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Contato
+                    <h1 class="display-4 fw-bold lh-1 mb-3">Contato
                     </h1>
                     <p class="col-lg-10 fs-4">Tem um elogio a fazer, ou reclamação? não entendeu como usar direito o
                         produto? ligue ou mande um email para o SAC da ACME</p>
                     <p class="col-lg-10 fs-4 font-weight-bold">
-                        (11) 98765-1234<br />
-                        acme@acme.co
+                        <b>
+                            (11) 98765-1234<br />
+                            Acme@acme.com
+                        </b>
                     </p>
                 </div>
                 <div class="col-md-10 mx-auto col-lg-5">
-                    <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+                    <form class="p-4 p-md-10 border rounded-3">
                         <div class="form-floating mb-3">
                             <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
                             <label for="floatingInput">Endereço de email</label>
@@ -51,19 +53,44 @@
                             <input id="phone-number" type="text" class="form-control" placeholder="(00) 00000-0000">
                             <label for="phone-number">Número de telefone</label>
                         </div>
-                        <div class="mb-5">
-                            <textarea id="floatingTextarea" class="form-control"></textarea>
+                        <div class="form-floating mb-5">
+                            <textarea placeholder="Mensagem" id="floatingTextarea" class="form-control"></textarea>
+                            <label for="floatingTextarea">Mensagem</label>
                         </div>
                         <div class="checkbox mb-3">
                             <label>
-                                <input type="checkbox" value="remember-me"> Atualizações no email
+                                <input type="checkbox" value="email"> Receber atualizações no email
                             </label>
                         </div>
-                        <button class="w-100 btn btn-lg btn-primary" type="submit">Enviar</button>
+                        <button class="w-100 btn btn-lg btn-danger" type="submit">Enviar</button>
                     </form>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap" />
+                    </svg>
+                </a>
+                <span class="mb-3 mb-md-0">&copy; 2023 Acme, Inc</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-body-secondary" href="https://linkedin.com/in/gabriel-ninow"
+                        target="_blank"><svg class="bi" width="30" height="30">
+                            <use xlink:href="#linkedin" />
+                        </svg></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="https://github.com/GabrielNinow"
+                        target="_blank"><svg class="bi" width="30" height="30">
+                            <use xlink:href="#github" />
+                        </svg></a></li>
+            </ul>
+        </footer>
     </div>
 
     <script>

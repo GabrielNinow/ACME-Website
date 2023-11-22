@@ -1,3 +1,30 @@
 * a {
     text-decoration: none;
+    color: #ec1c24;
+}
+
+* {
+    color: #f0f8ff;
+}
+
+h1 {
+    color: f0f8ff;
+}
+
+form {
+    background-color: #1b1f22;
+}
+
+body {
+    background-color: #212529;
+}
+
+button {
+    color: #ec1c24;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: rgba(0, 123, 255, .5);
 }
